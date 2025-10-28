@@ -12,23 +12,20 @@
     <nav>
       <a href="#home">Beranda</a>
       <a href="#bmi">Kalkulator BMI</a>
-      <a href="#tips">Tips</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
     <h2>Jaga Tubuh, Jaga Hidup</h2>
     <p>Mulai hari ini dengan gaya hidup sehat, untuk masa depan yang lebih baik.</p>
-    <button onclick="document.getElementById('bmi').scrollIntoView({behavior:'smooth'})">
-      Mulai Sekarang
-    </button>
+    <button id="scrollBtn">Mulai Sekarang</button>
   </section>
 
   <section class="bmi" id="bmi">
     <h2>Kalkulator BMI</h2>
     <input type="number" id="weight" placeholder="Berat (kg)" />
     <input type="number" id="height" placeholder="Tinggi (cm)" />
-    <button onclick="calculateBMI()">Hitung BMI</button>
+    <button id="calcBtn">Hitung BMI</button>
     <div id="result"></div>
     <div id="advice"></div>
   </section>
