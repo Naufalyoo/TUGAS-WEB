@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyLife - Hidup Sehat Setiap Hari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">HealthyLife</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#tips">Tips Sehat</a></li>
+        <li><a href="#kalkulator">Kalkulator BMI</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Jaga Tubuh, Jaga Hidup</h2>
+    <p>Mulai hari ini dengan gaya hidup sehat, untuk masa depan yang lebih baik.</p>
+    <button class="cta-btn" onclick="scrollToSection('tips')">Mulai Sekarang</button>
+  </section>
+
+  <!-- Tips Sehat -->
+  <section id="tips" class="tips-section">
+    <h2>Tips Hidup Sehat</h2>
+    <div class="tips-container">
+      <div class="tip-card">
+        <h3>🥗 Makan Seimbang</h3>
+        <p>Konsumsi makanan dengan gizi seimbang: sayur, buah, protein, dan karbohidrat kompleks.</p>
+      </div>
+      <div class="tip-card">
+        <h3>🚶‍♂️ Olahraga Teratur</h3>
+        <p>Lakukan aktivitas fisik minimal 30 menit setiap hari untuk menjaga kebugaran.</p>
+      </div>
+      <div class="tip-card">
+        <h3>💧 Cukup Minum Air</h3>
+        <p>Minum minimal 8 gelas air putih setiap hari agar tubuh tetap terhidrasi.</p>
+      </div>
+      <div class="tip-card">
+        <h3>🛏️ Istirahat Cukup</h3>
+        <p>Tidur 7-8 jam per malam membantu tubuh memperbaiki sel dan meningkatkan konsentrasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kalkulator BMI -->
+  <section id="kalkulator" class="bmi-section">
+    <h2>Kalkulator BMI</h2>
+    <p>Hitung indeks massa tubuh (BMI) Anda untuk mengetahui apakah berat badan Anda ideal.</p>
+    <div class="bmi-box">
+      <input type="number" id="berat" placeholder="Berat (kg)">
+      <input type="number" id="tinggi" placeholder="Tinggi (cm)">
+      <button onclick="hitungBMI()">Hitung BMI</button>
+      <p id="hasilBMI"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <p>© 2025 HealthyLife | Dibuat oleh Muhammad Naufal Athaillah Ghani</p>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@naufal_yoo" target="_blank">TikTok</a> |
+      <a href="mailto:naufal@example.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
